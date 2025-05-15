@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Галерея та Створення елементів</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Завдання 1: Галерея -->
+  <ul class="gallery">
+    <li><img class="image" src="https://images.pexels.com/photos/4617294/pexels-photo-4617294.jpeg" alt="зображення"></li>
+    <li><img class="image" src="https://images.pexels.com/photos/4617294/pexels-photo-4617294.jpeg" alt="зображення"></li>
+    <li><img class="image" src="https://images.pexels.com/photos/11815778/pexels-photo-11815778.jpeg" alt="зображення"></li>
+    <li><img class="image" src="https://images.pexels.com/photos/6195166/pexels-photo-6195166.jpeg" alt="зображення"></li>
+    <li><img class="image" src="https://images.pexels.com/photos/6957926/pexels-photo-6957926.jpeg" alt="зображення"></li>
+    <li><img class="image" src="https://images.pexels.com/photos/15520825/pexels-photo-15520825.jpeg" alt="зображення"></li>
+  </ul>
+
+  <div class="full-image-container" id="full-image-container">
+    <img class="full-image" id="full-image" src="" alt="розгорнуте зображення">
+  </div>
+
+  <!-- Завдання 2: Створення/очищення елементів -->
+  <div id="controls">
+    <input type="number" min="0" max="100" step="1" />
+    <button type="button" data-action="render">Створити</button>
+    <button type="button" data-action="destroy">Очистити</button>
+  </div>
+  <div id="boxes"></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
